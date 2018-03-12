@@ -1,5 +1,5 @@
 image_name=binbinpku/testweb-alpine
-tag=v1.2
+tag=v1.3
 docker build -t ${image_name}:${tag} .
 imagecount=`docker images|grep ${image_name}|grep ${tag}|wc -l`
 echo $imagecount
