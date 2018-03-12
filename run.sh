@@ -11,7 +11,7 @@ else
 fi
 docker run -d -p 8080:8080 ${image_name}:${tag}
 sleep 5s
-container=`curl http://localhost:8080/paas-scenario/|grep age|wc -l`
+container=`curl http://localhost:8080/paas-webapp/|grep age|wc -l`
 if [ $container -gt 0 ]; then
   echo "container run succ!!!"
 else
